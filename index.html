@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Finals Lab 1</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Information Desk</h1>
+        <p>Fill out the form, then click "Show My Info"</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="formTitle">
+            <h2 id="formTitle">Enter Your Information</h2>
+            <form id="infoForm">
+                <fieldset>
+                    <legend>Personal Details</legend>
+
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName">
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email">
+
+                    <label for="birthday">Birthday</label>
+                    <input type="date" id="birthday">
+
+                    <label for="age">Age</label>
+                    <input type="number" id="age">
+
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone">
+
+                    <label for="city">City</label>
+                    <input type="text" id="city">
+
+                    <label for="province">Province</label>
+                    <input type="text" id="province">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Year and Course</legend>
+
+                    <label for="year">Year Level</label>
+                    <select id="year">
+                        <option value="">Enter your Level</option>
+                        <option value="1st Year">1st Year</option>
+                        <option value="2nd Year">2nd Year</option>
+                        <option value="3rd Year">3rd Year</option>
+                        <option value="4th Year">4th Year</option>
+                    </select>
+
+                    <label for="course">Course</label>
+                    <select id="course">
+                        <option value="">Enter your Course</option>
+                        <option value="BSIT">BSIT</option>
+                        <option value="BSCS">BSCS</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Favorites</legend>
+
+                    <label for="color">Favorite Color</label>
+                    <select id="color">
+                        <option value="">Choose a Color</option>
+                        <option value="Red" class="red">Red</option>
+                        <option value="Blue" class="blue">Blue</option>
+                        <option value="Green" class="green">Green</option>
+                        <option value="Pink" class="pink">Pink</option>
+                        <option value="Violet" class="violet">Violet</option>
+                        <option value="Orange" class="orange">Orange</option>
+                    </select>
+
+                    <label for="food">Favorite Food</label>
+                    <select id="food">
+                        <option value="">Choose a Food</option>
+                        <option value="Adobo">Adobo</option>
+                        <option value="Sinigang">Sinigang</option>
+                        <option value="Sisig">Sisig</option>
+                        <option value="Pizza">Pizza</option>
+                        <option value="Pansit">Pansit</option>
+                        <option value="Tinola">Tinola</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <p>Preferred Contact Method</p>
+                    <input type="radio" name="contact" id="contactEmail" value="Email" class="small">
+                    <label for="contactEmail" style="display: inline;">Email</label>
+                    <input type="radio" name="contact" id="contactPhone" value="Phone" class="small">
+                    <label for="contactPhone" style="display: inline;">Phone</label>
+                    <input type="radio" name="contact" id="contactText" value="Text" class="small">
+                    <label for="contactText" style="display: inline;">Text</label>
+
+                    <label for="bio">Short Bio</label>
+                    <textarea id="bio" rows="3"></textarea>
+
+                    <input type="checkbox" id="newsletter" class="small">
+                    <label for="newsletter" style="display: inline;">Subscribe to newsletter</label>
+                </fieldset>
+
+                <button type="button" onclick="showMyInfo()">Show My Info</button>
+
+            </form>
+        </section>
+
+        <article aria-labelledby="cardTitle">
+            <h2 id="cardTitle">Display Card</h2>
+
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <dl>
+                    <dt>Full Name</dt>
+                    <dd class="answer"></dd>
+
+                    <dt>Email</dt>
+                    <dd class="answer"></dd>
+
+                    <dt>Age</dt>
+                    <dd class="answer"></dd>
+
+                    <dt>Phone</dt>
+                    <dd class="answer"></dd>
+
+                    <dt>Birthday</dt>
+                    <dd class="answer"></dd>
+
+                    <dt>City</dt>
+                    <dd class="answer"></dd>
+
+                    <dt>Province</dt>
+                    <dd class="answer"></dd>
+                </dl>
+            </fieldset>
+
+            <fieldset>
+                <legend>Year and Course</legend>
+
+                <dl>
+                    <dt>Year Level</dt>
+                    <dd class="answer"></dd>
+
+                    <dt>Course</dt>
+                    <dd class="answer"></dd>
+                </dl>
+            </fieldset>
+
+            <fieldset>
+                <legend>Favorites</legend>
+
+                <dl>
+                    <dt>Favorite Color</dt>
+                    <dd class="answer"></dd>
+
+                    <dt>Favorite Food</dt>
+                    <dd class="answer"></dd>
+                </dl>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <dl>
+                    <dt>Contact Method</dt>
+                    <dd class="answer"></dd>
+
+                    <dt>Short Bio</dt>
+                    <dd class="answer"></dd>
+
+                    <dt>Newsletter</dt>
+                    <dd class="answer"></dd>
+                </dl>
+            </fieldset>
+
+            <p id="message"></p>
+        </article>
+    </main>
+
+    <footer>
+        <p>Pancho, Christian Julius | 2 - IT A | CCS114</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
